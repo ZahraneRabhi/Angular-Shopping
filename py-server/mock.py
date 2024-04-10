@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request
-import time
+from time import sleep
 
 app = Flask(__name__)
 
@@ -31,7 +31,7 @@ def get_products():
 def update_cart():
     global cart
     cart = request.json
-    time.sleep(0.02) # 0.2 sec delay 
+    sleep(0.02) # 0.2 sec delay 
     return "", 201
 
 @app.route("/api/cart", methods=["GET"])
