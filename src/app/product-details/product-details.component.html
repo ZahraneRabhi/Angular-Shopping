@@ -1,0 +1,16 @@
+<div class="product">
+    <img src="https://via.placeholder.com/150" [alt]="product.imageName">
+    <h3> {{ product.name }} </h3>
+    <div class="price">
+        <p [ngClass]="{ strikethrough: product.discount > 0}"> 
+            {{ product.price | currency: "USD" }} 
+        </p>
+        <p *ngIf="product.discount > 0" class="discount">
+            {{ product.price * (1 - product.discount) | currency : "USD" }}
+        </p>
+        <p *ngIf="product.discount == 0 ">&#8203;</p>
+    </div>
+    <button (click)="cartButtonClicked(product)">Add to Cart</button>
+</div>
+
+

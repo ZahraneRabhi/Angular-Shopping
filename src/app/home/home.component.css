@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.home {
+    padding: 20px;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.feature {
+    flex: 1;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature h3 {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin: 10px 0;
+    }
+}

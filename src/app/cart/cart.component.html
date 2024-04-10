@@ -1,0 +1,16 @@
+<div class="cart">
+    <div *ngIf="cartItems.length == 0">
+        You Have No items☹️
+    </div>
+    <div></div> 
+    <div *ngFor="let product of cartItems " class="cart-item">
+        <img src="https://via.placeholder.com/100" alt="Product Image">
+        <h3> {{ product.name }} </h3>
+        <p>   {{ product.price | currency: 'USD'}} </p>
+        <button (click)="removeFromCart(product)">Remove</button>
+    </div>
+    <div class="cart-total">
+        <h3>Total: {{ cartTotal | currency: 'USD'}} </h3>
+        <button>Checkout</button>
+    </div>
+</div>

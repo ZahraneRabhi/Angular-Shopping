@@ -1,0 +1,14 @@
+.catalog {
+    padding: 20px;
+    text-align: center;
+}
+
+.filter {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.filter select {
+    padding: 5px;
+    font-size: 1em;
+}

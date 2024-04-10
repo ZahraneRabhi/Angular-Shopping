@@ -1,0 +1,36 @@
+.cart {
+    padding: 20px;
+}
+
+.cart-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-item img {
+    max-width: 100px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.cart-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.cart-item button {
+    margin-left: auto; 
+}
+
+.cart-total {
+    margin-top: 20px;
+    text-align: right;
+}

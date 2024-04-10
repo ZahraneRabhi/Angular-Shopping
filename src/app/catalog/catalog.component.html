@@ -1,0 +1,17 @@
+<div class="catalog">
+        <div class="filter">
+            <label for="filter">Filter by:</label>
+            <select id="filter" [(ngModel)]="filter">
+                <option value="">All Products</option>
+                <option value="category-1">category-1</option>
+                <option value="category-2">category-2</option>
+                <option value="category-3">category-3</option>
+            </select>
+        </div>
+    <app-product-details 
+        *ngFor="let product of getFilteredProducts()" 
+        [product]="product"
+        (buy)="addToCart(product)"
+        ></app-product-details>
+    
+</div>

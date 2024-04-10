@@ -1,0 +1,10 @@
+<header>
+    <h1> {{ headerLabel}} </h1>
+</header>
+<nav>
+    <a 
+    *ngFor="let link of navbar"
+     [routerLink]="link.link"
+     routerLinkActive="active"
+     > {{ link.label}} </a>
+</nav>
