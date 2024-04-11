@@ -51,6 +51,8 @@ Follow these steps to run the project:
 - ***SERVER***: Javascript Or Python mock server for testing purposes
 - ***GIT***: Version Control
 
+# 
+
 # Notes
 - This project has similarities to a follow-along Angular course which i will add its reference later
 - This projects uses a mock server developed in Flask to immitate an Api behaviours
