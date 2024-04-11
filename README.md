@@ -60,4 +60,4 @@ Follow these steps to run the project:
 
 # ToDo
 - Implement Login and Signup Forms
-
+- Implement Back-office functionalities
